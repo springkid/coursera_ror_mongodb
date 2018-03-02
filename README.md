@@ -2,4 +2,4 @@
 
 ## coursera_ror_mongodb
 
-This repository contains my progress and assignments and documentation of the [3rd course](https://www.coursera.org/learn/ruby-on-rails-web-services-mongodb/home/week/1) of the "Ruby on Rails Web development Specialization" Specialization from Coursera.
+This repository contains the documentation of the [3rd course](https://www.coursera.org/learn/ruby-on-rails-web-services-mongodb/home/week/1) of the "Ruby on Rails Web development Specialization" Specialization from Coursera.
