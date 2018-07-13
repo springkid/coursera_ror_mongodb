@@ -7,9 +7,13 @@ Resumen de las transparencias de la Semana 1.
 3. Integrating Ruby/Rails with MongoDB
 
 ---
-## Introduction to NoSQL and MongoDB.
+## Lesson 01. Welcome to Ruby on Rails Web Services and Integration with mongoDB.
 
-### Welcome to Module 1: Introduction to MongoDB, Mongo-Ruby API and CRUD.
+---
+
+## Lesson 02. Introduction to NoSQL and MongoDB.
+
+### Welcome to Module 1: Introduction to MongoDB, Mongo-Ruby API and CRUD. (3 min.)
 
 ### Github repository for Module 1
 
@@ -46,7 +50,7 @@ Very popular and major companies use it, specially social networking sites (Twit
 Excellent performance and stability, fat and scalable and fairly simple model.
 Supports unstructured format => very agile and adaptable.
 
-## Categories of NoSQL (8 min)
+### Categories of NoSQL (8 min)
 #### Categories of NoSQL - Key / Value
 Value can be String or JSON.
 Infor is stored in Key-value hash.
@@ -174,9 +178,12 @@ mongo-ruby driver
 
 ### Basic MongoDB commands in IRB
 
+Launch irb console
+
 ```
 #disable logging
-require 'mongo'; Mongo::Logger.logger.level = ::Logger::INFO
+require 'mongo'
+Mongo::Logger.logger.level = ::Logger::INFO
 
 #get a connection
 db = Mongo::Client.new('mongodb://localhost:27017')
@@ -199,8 +206,19 @@ db[:zips].find.first
 
 ---
 
-## CRUD
+## Lesson 3. CRUD
 
 ### Inserting documents (5 min)
+
+insert_one
+insert_many
+
+```
+
+db[:zips].insert_one(:_id => "100", :city => "city01",
+:loc => [-76.05927000, 2.04050607],
+:pop => 4678, :state => "MD")
+```
+
 
 ### Practice Prograaming Assignment - MongoDB Ruby Driver CRUD
