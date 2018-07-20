@@ -214,11 +214,31 @@ insert_one
 insert_many
 
 ```
-
 db[:zips].insert_one(:_id => "100", :city => "city01",
 :loc => [-76.05927000, 2.04050607],
 :pop => 4678, :state => "MD")
+
 ```
 
+```
 
-### Practice Prograaming Assignment - MongoDB Ruby Driver CRUD
+db[:zips].insert_many([
+  {:_id => "200", :city => "city02",
+    :loc => [-74.05922700000001, 37.564894 ],
+    :pop => 2000, :state => "CA" },
+    {:_id => "201", :city => "city03",
+      :loc => [-75.09322700000001, 35.564894 ],
+      :pop => 3000, :state => "CA" },    
+  ])
+
+```
+
+```
+db[:zips].find(:city => "city02").to_a
+
+```
+
+### Practice Prograaming Assignment - MongoDB Ruby Driver CRUD (10 min)
+
+
+### Find (10 min)
