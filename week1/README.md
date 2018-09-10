@@ -242,3 +242,25 @@ db[:zips].find(:city => "city02").to_a
 
 
 ### Find (10 min)
+
+### Paging (5 min)
+
+
+### Advanced find (12 min)
+
+less_than and great less_than
+
+$lt
+
+$gt
+
+```
+db[:zips].find()
+
+```
+Evaluations
+Find By - Regex
+$Regex
+$exists
+$not
+$type
